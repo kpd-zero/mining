@@ -63,6 +63,11 @@ body {
   overflow-x: hidden;
 }
 
+header, main {
+  position: relative;
+  z-index: 10;
+}
+
 h1, h2 {
   font-weight: 700;
   color: #FFFAFA;
@@ -106,7 +111,7 @@ a:hover {
   top: -47%;
   left: -1%;
   mix-blend-mode: color-dodge;
-  z-index: -1;
+  z-index: -2;
 }
 
 .img-color-dodge-2 {
@@ -114,7 +119,7 @@ a:hover {
   top: -78%;
   left: 40%;
   mix-blend-mode: color-dodge;
-  z-index: -1;
+  z-index: -2;
 }
 
 .img-color-dodge-3 {
@@ -122,14 +127,14 @@ a:hover {
   top: -118%;
   left: 42%;
   mix-blend-mode: color-dodge;
-  z-index: -1;
+  z-index: -2;
 }
 
 .gradient-1 {
   position: relative;
   top: -150%;
   left: -45%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .gradient-2 {
@@ -137,7 +142,7 @@ a:hover {
   top: -185%;
   left: 45%;
   opacity: 0.8;
-  z-index: -1;
+  z-index: -2;
 }
 
 .hero-section {
