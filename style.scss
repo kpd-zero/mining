@@ -24,6 +24,10 @@ h1, h2 {
     color: $whitish;
 }
 
+p {
+    color: $whitish;
+}
+
 h1 {
     font-size: 58px;
 }
@@ -34,14 +38,26 @@ h2 {
 
 a {
     color: $whitish;
+    transition: 0.2s ease;
     &:hover {
         color: $pink;
     }
 }
 
-.logo {
-    color: $white;
+button {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    color: $whitish;
+    width: 170px;
+    height: 43px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid $white;
+    border-radius: 5px;
 }
+
+//--------------------------------BACKGROUND
 
 .background-container {
     position: absolute;
@@ -96,7 +112,66 @@ a {
     z-index: -2;
 }
 
+
+//-------------------------------------HEADER
+header {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    color: $white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.phone-number {
+    font-size: 18px;
+    color: $pink;
+    font-weight: 600;
+}
+
+.header-content {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-line {
+    position: relative;
+    background-color: $white;
+    height: 1px;
+    opacity: 0.4;
+    width: 100vw;
+    left: -20vw;
+}
+
+
+nav {
+    padding: 1rem 0 0 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .hero-section {
     width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
