@@ -305,6 +305,31 @@ nav {
   line-height: 26px;
 }
 
+.about-section {
+  padding: 3rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-image {
+  background-image: url("about-image.png");
+  background-size: cover;
+  width: 45%;
+}
+
+.about-content {
+  padding: 4rem 0 4rem 5rem;
+  width: 55%;
+  background-color: #282C4D;
+}
+.about-content p {
+  padding-top: 1rem;
+  width: 55%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
 @media (max-width: 1900px) {
   h1 {
     font-size: 48px;
