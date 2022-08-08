@@ -1,1 +1,72 @@
 @import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+$white: #FFFFFF;
+$whitish: #FFFAFA;
+$pink: #FD367E;
+$darkblue: #282C4D;
+$darkpurple: #130139;
+
+
+body {
+    font-family: 'Inter';
+    background-color: $darkpurple;
+    //overflow-x: hidden;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+.background-container {
+    position: absolute;
+    width: 100vw;
+    height: 200vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+    position: relative;
+    width: 100vw;
+    z-index: -10;
+}
+
+.img-color-dodge {
+    position: relative;
+    top: -47%;
+    left: -1%;
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+.img-color-dodge-2 {
+    position: relative;
+    top: -78%;
+    left: 40%;
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+.img-color-dodge-3 {
+    position: relative;
+    top: -118%;
+    left: 42%;
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+.gradient-1 {
+    position: relative;
+    top: -150%;
+    left: -45%;
+    z-index: -1;
+}
+
+.gradient-2 {
+    position: relative;
+    top: -185%;
+    left: 45%;
+    opacity: 0.8;
+    z-index: -1;
+}
