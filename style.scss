@@ -199,10 +199,72 @@ nav {
     }
 }
 
+//----------------------------------------------OFFERS SECTION
+.offers-section {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers-container {
+    padding-top: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.offers-card {
+    background-color: $darkblue;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.offers-count {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    background: linear-gradient(97.8deg, #4EF4FF 6.19%, #B095FF 20.81%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    &:before {
+        content: '';
+        display: inline-block;
+        min-width: 5px;
+        height: 36px;
+        background-color: $pink;
+        margin-right: 0.5rem;
+    }
+}
+
+.offers-header {
+    width: 70%;
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: $whitish;
+}
+
+
+.offers-description {
+    width: 85%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
 
 
 
 
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--MEDIA QUERIES
 @media (max-width: 1900px) {
     h1 {
         font-size: 48px;
@@ -218,5 +280,10 @@ nav {
 
     .hero-content {
         width: 70%;
+    }
+
+    .offers-header {
+        font-size: 20px;
+        line-height: 24px;
     }
 }
