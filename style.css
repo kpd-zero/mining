@@ -71,6 +71,7 @@ header, main {
 h1, h2 {
   font-weight: 700;
   color: #FFFAFA;
+  line-height: 76px;
 }
 
 p {
@@ -104,6 +105,14 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #FFFFFF;
   border-radius: 5px;
+}
+
+::-moz-selection {
+  background-color: #FD367E;
+}
+
+::selection {
+  background-color: #FD367E;
 }
 
 .background-container {
@@ -213,7 +222,42 @@ nav {
 }
 
 .hero-section {
+  padding: 5rem 0 5rem 0;
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  height: 100%;
+  width: 50%;
+}
+.hero-content p {
+  font-size: 18px;
+  line-height: 32px;
+  padding: 1rem 0 2rem 0;
+}
+.hero-content button {
+  background-color: #FD367E;
+  border: none;
+}
+
+@media (max-width: 1900px) {
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .hero-section img {
+    max-width: 460px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-content {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */
