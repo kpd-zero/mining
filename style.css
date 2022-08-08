@@ -60,10 +60,31 @@ a {
 body {
   font-family: "Inter";
   background-color: #130139;
+  overflow-x: hidden;
 }
 
 h1, h2 {
   font-weight: 700;
+  color: #FFFAFA;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+a {
+  color: #FFFAFA;
+}
+a:hover {
+  color: #FD367E;
+}
+
+.logo {
+  color: #FFFFFF;
 }
 
 .background-container {
@@ -117,4 +138,8 @@ h1, h2 {
   left: 45%;
   opacity: 0.8;
   z-index: -1;
+}
+
+.hero-section {
+  width: 60vw;
 }/*# sourceMappingURL=style.css.map */
