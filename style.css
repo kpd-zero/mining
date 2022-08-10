@@ -140,6 +140,23 @@ button:hover {
   display: none;
 }
 
+.form-input[type=submit], input[type=submit], input[type=reset] {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  background-color: #FD367E;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFAFA;
+}
+.form-input[type=submit]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #FFFAFA;
+  color: #282C4D;
+}
+
 .background-container {
   position: absolute;
   width: 100vw;
@@ -347,7 +364,7 @@ nav {
 }
 
 .about-image {
-  background-image: url("img/about-image.png");
+  background-image: url("http://bit-camping.ru/img/about-image.png");
   background-size: cover;
   width: 47%;
 }
@@ -453,7 +470,7 @@ nav {
 }
 
 .contacts-section {
-  background-image: url("img/back-contacts.png");
+  background-image: url("http://bit-camping.ru/img/back-contacts.png");
   background-size: cover;
 }
 
