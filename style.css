@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter";
   background-color: #130139;
@@ -105,6 +109,11 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #FFFFFF;
   border-radius: 5px;
+  transition: 0.2s ease;
+}
+button:hover {
+  background-color: #FD367E;
+  border: none;
 }
 
 ::-moz-selection {
@@ -115,12 +124,29 @@ button {
   background-color: #FD367E;
 }
 
+.hamburger-button {
+  cursor: pointer;
+  background-color: none;
+  border: none;
+  width: auto;
+  height: auto;
+  display: none;
+}
+.hamburger-button:hover {
+  background-color: transparent;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .background-container {
   position: absolute;
   width: 100vw;
   height: 200vw;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .background-image {
@@ -184,6 +210,10 @@ header {
   font-size: 18px;
   color: #FD367E;
   font-weight: 600;
+  transition: 0.2s ease;
+}
+.phone-number:hover {
+  color: #FFFAFA;
 }
 
 .header-content {
@@ -214,7 +244,7 @@ header {
 
 nav {
   padding: 1rem 0 0 0;
-  width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,7 +252,7 @@ nav {
 }
 
 .hero-section {
-  padding: 6rem 0 6rem 0;
+  padding: 10rem 0 6rem 0;
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
@@ -244,6 +274,11 @@ nav {
 .hero-content button {
   background-color: #FD367E;
   border: none;
+  transition: 0.2s ease;
+}
+.hero-content button:hover {
+  background-color: #FFFAFA;
+  color: #282C4D;
 }
 
 .offers-section {
@@ -256,7 +291,7 @@ nav {
 }
 
 .offers-container {
-  padding-top: 3rem;
+  padding-top: 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -312,14 +347,14 @@ nav {
 }
 
 .about-image {
-  background-image: url("about-image.png");
+  background-image: url("img/about-image.png");
   background-size: cover;
-  width: 45%;
+  width: 47%;
 }
 
 .about-content {
-  padding: 4rem 0 4rem 5rem;
-  width: 55%;
+  padding: 5rem 0 5rem 8rem;
+  width: 53%;
   background-color: #282C4D;
 }
 .about-content p {
@@ -337,7 +372,7 @@ nav {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem 0 3rem 0;
+  padding: 7rem 0 4rem 0;
 }
 
 .gallery-content1 {
@@ -365,7 +400,7 @@ nav {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 41.2% 58.8%;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0 7rem 0;
 }
 .gallery-content2 div {
   display: flex;
@@ -384,14 +419,14 @@ nav {
 }
 
 .map-content {
-  width: 45%;
+  width: 57%;
 }
 
 .map-content-container {
-  margin: 3rem 0 4rem 0;
+  margin: 5rem 0 4rem 0;
   position: relative;
-  max-width: 55%;
-  left: 45%;
+  max-width: 57%;
+  left: 38%;
   display: flex;
   flex-direction: column;
 }
@@ -404,7 +439,7 @@ nav {
   margin-bottom: 1rem;
 }
 .map-content-container .phone-number {
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 3rem 0 3rem 0;
 }
 
 .email-link {
@@ -418,7 +453,7 @@ nav {
 }
 
 .contacts-section {
-  background-image: url("back-contacts.png");
+  background-image: url("img/back-contacts.png");
   background-size: cover;
 }
 
@@ -429,10 +464,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0 5rem 0;
+  padding: 6rem 0 6rem 0;
 }
 .contacts-content p {
   margin: 1.5rem 0 3rem 0;
+  text-align: center;
+}
+.contacts-content h2 {
+  text-align: center;
 }
 .contacts-content form {
   width: 100%;
@@ -448,6 +487,11 @@ nav {
 .contacts-content form button {
   background-color: #FD367E;
   border: none;
+  transition: 0.2s ease;
+}
+.contacts-content form button:hover {
+  background-color: #FFFAFA;
+  color: #282C4D;
 }
 .contacts-content form input {
   font-weight: 400;
@@ -511,5 +555,182 @@ footer p {
   .offers-header {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+@media (max-width: 1400px) {
+  header {
+    width: 80vw;
+  }
+  .header-line {
+    left: -10vw;
+  }
+  .hero-section {
+    width: 80vw;
+  }
+  .offers-section {
+    width: 80vw;
+  }
+  .about-content {
+    padding: 5rem 0 5rem 5rem;
+  }
+  .about-content p {
+    width: 75%;
+  }
+  .gallery-section h2 {
+    width: 80vw;
+  }
+  .gallery-content1 {
+    width: 80vw;
+  }
+  .gallery-content2 {
+    width: 80vw;
+  }
+  .contacts-content {
+    width: 80vw;
+  }
+  .map-content-container {
+    left: 20%;
+    max-width: 70%;
+  }
+  footer p {
+    width: 80vw;
+  }
+}
+@media (max-width: 1020px) {
+  nav {
+    max-width: 60%;
+  }
+  .hero-section img {
+    max-width: 40%;
+  }
+  .offers-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    min-width: 100%;
+  }
+  .about-image {
+    height: 50vw;
+    min-width: 100%;
+  }
+  .map-section {
+    flex-direction: column;
+  }
+  .map-content {
+    width: 80vw;
+  }
+  .map-content-container {
+    max-width: 80vw;
+    left: 10%;
+  }
+  .map {
+    width: 100%;
+  }
+  .map iframe {
+    height: 40vw;
+  }
+}
+@media (max-width: 780px) {
+  .desktop {
+    display: none;
+  }
+  .hamburger-button {
+    display: block;
+  }
+  .mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+    right: 0;
+    background-color: #FFFAFA;
+    border-radius: 8px;
+    box-shadow: -10px 10px 100px 100px rgba(19, 1, 57, 0.6);
+    z-index: 100;
+  }
+  .mobile-menu a {
+    color: #282C4D;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile-menu button {
+    background-color: #FD367E;
+  }
+  .mobile-menu .phone-number {
+    display: block;
+    color: #FD367E;
+  }
+  .close-button {
+    position: relative;
+    left: 20vw;
+    cursor: pointer;
+    background-color: #FD367E;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section {
+    padding: 2rem 0 0 0;
+    flex-direction: column;
+    width: 80vw;
+    align-items: flex-start;
+  }
+  .hero-section h1 {
+    max-width: 80vw;
+  }
+  .hero-section img {
+    max-width: 500px;
+    position: relative;
+    left: 30vw;
+    top: -150px;
+  }
+  .inactive {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .hero-content {
+    height: auto;
+    width: 100%;
+  }
+  .hero-content p {
+    max-width: 70%;
+  }
+  .offers-container {
+    grid-template-columns: 1fr;
+  }
+  .about-content {
+    padding: 5rem 0 5rem 10vw;
+  }
+  .gallery-content1 {
+    gap: 1rem;
+  }
+  .gallery-content1 div {
+    gap: 1rem;
+  }
+  .gallery-content2 {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+  .gallery-content2 div {
+    gap: 1rem;
+  }
+  .map iframe {
+    height: 60vh;
+  }
+  .contacts-content form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 3rem);
   }
 }/*# sourceMappingURL=style.css.map */

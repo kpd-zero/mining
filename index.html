@@ -9,30 +9,41 @@
 </head>
 <body>
     <div class="background-container">
-        <img src="back.svg" alt="" class="background-image">
-        <img src="color-dodge-1.png" alt="" class="img-color-dodge">
-        <img src="color-dodge-2.png" alt="" class="img-color-dodge-2">
-        <img src="color-dodge-3.png" alt="" class="img-color-dodge-3">
-        <img src="gradient1.png" alt="" class="gradient-1">
-        <img src="gradient2.png" alt="" class="gradient-2">
+        <img src="img/back.svg" alt="" class="background-image">
+        <img src="img/color-dodge-1.png" alt="" class="img-color-dodge">
+        <img src="img/color-dodge-2.png" alt="" class="img-color-dodge-2">
+        <img src="img/color-dodge-3.png" alt="" class="img-color-dodge-3">
+        <img src="img/gradient1.png" alt="" class="gradient-1">
+        <img src="img/gradient2.png" alt="" class="gradient-2">
     </div>
     
+    <div class="mobile-menu inactive">
+        <button class="close-button"><img src="img/icons8-close.svg" alt=""></button>
+            <a href="#about" class="mobile-link">О нас</a>
+            <a href="#offers" class="mobile-link">Услуги</a>
+            <a href="#gallery" class="mobile-link">Галерея</a>
+            <a href="#map" class="mobile-link">Контакты</a>
+            <a href="#contacts" class="mobile-link">Обратная связь</a>
+        <button>Обратный звонок</button>
+        <a href="tel:+79164589777" class="phone-number">+ 7 (916) 458-97-77</a>
+    </div>
 
     <header>
         <div class="header-content">
             <a href="#" class="logo">Bit-camping</a>
-            <div class="header-contacts">
+            <div class="header-contacts desktop">
                 <button>Обратный звонок</button>
-                <a href="#" class="phone-number">+ 7 (999) 999-99-99</a>
+                <a href="tel:+79164589777" class="phone-number">+ 7 (916) 458-97-77</a>
             </div>
+            <button class="hamburger-button"><img src="img/icons8-menu.svg" alt=""></button>
         </div>
         <div class="header-line"></div>
-        <nav>
-                <a href="#">О нас</a>
-                <a href="#">Услуги</a>
-                <a href="#">Галерея</a>
-                <a href="#">Контакты</a>
-                <a href="#">Обратная связь</a>
+        <nav class="desktop">
+                <a href="#about">О нас</a>
+                <a href="#offers">Услуги</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#map">Контакты</a>
+                <a href="#contacts">Обратная связь</a>
         </nav>
     </header>
 
@@ -43,10 +54,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
                 <button>Подробнее</button>
             </div>
-            <img src="hero-image.png" alt="Контейнер для майнинга">
+            <img src="img/hero-image.png" alt="Контейнер для майнинга">
         </section>
 
-        <section class="offers-section">
+        <section id="offers" class="offers-section">
             <h2>Наши услуги</h2>
             <div class="offers-container">
                 <div class="offers-card">
@@ -83,7 +94,7 @@
         </section>
 
         <section class="about-section">
-            <div class="about-image"></div>
+            <div id="about" class="about-image"></div>
             <div class="about-content">
                 <h2>О нас</h2>
                 <p>Коллектив професионалов, обьединенных общей идеей. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.</p>
@@ -92,37 +103,38 @@
             </div>
         </section>
 
-        <section class="gallery-section">
+        <section id="gallery" class="gallery-section">
             <h2>Галерея</h2>
             <div class="gallery-content1">
                 <div class="gallery1">
-                    <img src="gallery-1.png" alt="">
-                    <img src="gallery-3.png" alt=""></div>
+                    <img src="img/gallery-1.png" alt="">
+                    <img src="img/gallery-3.png" alt=""></div>
                 <div class="gallery2">
-                    <img src="gallery-2.png" alt="">
-                    <img src="gallery-4.png" alt="">
+                    <img src="img/gallery-2.png" alt="">
+                    <img src="img/gallery-4.png" alt="">
                 </div>
             </div>
             <div class="gallery-content2">
                 <div class="gallery3">
-                    <img src="gallery-5.png" alt="">
-                    <img src="gallery-7.png" alt=""></div>
+                    <img src="img/gallery-5.png" alt="">
+                    <img src="img/gallery-7.png" alt=""></div>
                 <div class="gallery4">
-                    <img src="gallery-6.png" alt="">
-                    <img src="gallery-8.png" alt="">
+                    <img src="img/gallery-6.png" alt="">
+                    <img src="img/gallery-8.png" alt="">
                 </div>   
             </div>
         </section>
 
-        <section class="map-section">
+        <section id="map" class="map-section">
             <div class="map-content">
                 <div class="map-content-container">
                 <h2>Контакты</h2>
-                <p>ОФИС: </p>
-                <p>
-                    14100, Мытищи, Московская область, улица Щербакова, 4А
-                </p>
-                <a href="#" class="phone-number">+ 7 (999) 999-99-99</a>
+                <p>ОФИСЫ: </p>
+                <p>Москва: </p>
+                <p>115230, Хлебозаводский проезд, д. 7, стр. 9, этаж 6, офис 604</p>
+                <p>Ростов: </p>
+                <p>Савинское шоссе д. 36</p>
+                <a href="tel:+79164589777" class="phone-number">+ 7 (916) 458-97-77</a>
                 <a href="#" class="email-link">info@bit-camping.ru</a>
             </div></div>
             <div class="map">
@@ -130,12 +142,12 @@
             </div>
         </section>
 
-        <section class="contacts-section">
+        <section id="contacts" class="contacts-section">
             <div class="preloader"></div>
             <div class="contacts-content">
             <h2>Остались вопросы?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
-            <form id="form-contact" method="POST" autocomplete="off" enctype="multipart/form-data">
+            <form id="form-contact">
                 <input type="text" placeholder="Имя">
                 <input type="text" placeholder="Номер телефона">
                 <button>Отправить</button>
@@ -147,7 +159,7 @@
         <p>© 2022 Bit-camping</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="telegramform.js"></script>
+
+    <script src="menu.js"></script>
 </body>
 </html>
