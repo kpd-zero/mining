@@ -1,5 +1,9 @@
 <?php
 
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+
 //В переменную $token нужно вставить токен, который нам прислал @botFather
 $token = "5310626951:AAFo3X-xlViHKRDdGXYy202lOXlvPI3pVn0";
 
