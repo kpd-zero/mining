@@ -232,13 +232,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .hero-content {
     height: 100%;
     width: 50%;
-    overflow-x: hidden;
     p {
         font-size: 18px;
         line-height: 32px;
@@ -619,6 +617,9 @@ footer {
 }
 
 @media (max-width: 780px) {
+    html {
+        overflow-x: hidden;
+    }
     .desktop {
         display: none;
     }
@@ -673,10 +674,10 @@ footer {
             max-width: 80vw;
         }
         img {
-            max-width: 500px;
+            max-width: 400px;
             position: relative;
-            left: 30vw;
-            top: -150px;
+            left: 0vw;
+            top: -10px;
         }
     }
     .inactive {
