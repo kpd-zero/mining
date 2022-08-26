@@ -428,6 +428,10 @@ nav {
 .gallery-content2 div img {
   max-width: 100%;
 }
+.gallery-content2 iframe {
+  grid-column: 1/span 2;
+  height: 70vh;
+}
 
 .map-section {
   background-color: #282C4D;

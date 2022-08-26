@@ -384,6 +384,10 @@ nav {
             max-width: 100%;
         }
     }
+    iframe {
+        grid-column: 1/span 2;
+        height: 70vh;
+    }
 }
 
 //-------------------------------------------------------MAP SECTION
